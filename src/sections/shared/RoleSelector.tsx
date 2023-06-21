@@ -37,6 +37,7 @@ export const RoleSelector = ({
           className="rounded-full w-16 h-16 flex justify-center items-center"
           onClick={() => onChange(roleButton.id)}
           variant={value === roleButton.id ? "primary" : "default"}
+          type="button"
         >
           {roleButton.icon}
         </Button>

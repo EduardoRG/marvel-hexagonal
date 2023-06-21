@@ -27,7 +27,7 @@ export const HeroCreator = () => {
 
   return (
     <div className="grid grid-cols-2 gap-16 max-w-4xl">
-      <form className="w-full" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <RoleSelector
           className="mb-6"
           value={role}

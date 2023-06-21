@@ -6,6 +6,7 @@ import { Button, Divider } from "./shared";
 import { HeroesContextProvider } from "./heroes/HeroesContext";
 import { TeamsContextProvider } from "./teams/TeamsContext";
 import { createLocalStorageTeamRepository } from "../modules/teams/infrastructure/LocalStorageTeamRepository";
+import { HeroesList } from "./heroes/HeroesList";
 
 const heroesRepository = createLocalStorageHeroRepository();
 const teamsRepository = createLocalStorageTeamRepository();
@@ -26,6 +27,11 @@ export const App = () => {
               <Button>Create new Team</Button>
             </div>
           </div>
+        </section>
+        <Divider />
+        <section className="flex flex-col justify-center items-center py-32 px-32">
+          <h3 className="mb-24 text-4xl uppercase">All your Heroes</h3>
+          <HeroesList />
         </section>
         <Divider />
         <section className="flex flex-col justify-center items-center py-32 px-32">
