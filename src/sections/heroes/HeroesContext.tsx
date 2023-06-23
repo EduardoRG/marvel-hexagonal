@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useContext, useCallback } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { getAllHeroes } from "../../modules/heroes/application/getAll/getAllHeroes";
-import { createHero } from "../../modules/heroes/application/create/createHero";
-import { removeHero } from "../../modules/heroes/application/remove/removeHero";
-import { Hero, HeroWithoutId } from "../../modules/heroes/domain/Hero";
-import { HeroRepository } from "../../modules/heroes/domain/HeroRepository";
-import { updateHero } from "../../modules/heroes/application/update/updateHero";
+import { getAllHeroes } from "@/modules/heroes/application/getAll/getAllHeroes";
+import { createHero } from "@/modules/heroes/application/create/createHero";
+import { removeHero } from "@/modules/heroes/application/remove/removeHero";
+import { Hero, HeroWithoutId } from "@/modules/heroes/domain/Hero";
+import { HeroesRepository } from "@/modules/heroes/domain/HeroesRepository";
+import { updateHero } from "@/modules/heroes/application/update/updateHero";
 
 export interface ContextState {
   heroes: Hero[];
@@ -21,7 +21,7 @@ export const HeroesContext = React.createContext<ContextState>(
 export const HeroesContextProvider = ({
   children,
   repository,
-}: React.PropsWithChildren<{ repository: HeroRepository }>) => {
+}: React.PropsWithChildren<{ repository: HeroesRepository }>) => {
   const [heroes, setHeroes] = useState<Hero[]>([]);
 
   const getHeroes = useCallback(async () => {

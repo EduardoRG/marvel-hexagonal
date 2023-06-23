@@ -1,6 +1,6 @@
 import { Hero, HeroWithoutId } from "./Hero";
 
-export interface HeroRepository {
+export interface HeroesRepository {
   get(heroId: string): Promise<Hero | null>;
   getAll(): Promise<Hero[]>;
   save(hero: HeroWithoutId): Promise<void>;

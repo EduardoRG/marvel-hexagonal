@@ -26,20 +26,23 @@ export const TeamCreator = () => {
   };
 
   return (
-    <div className="grid grid-cols-2 gap-16 max-w-4xl">
-      <form onSubmit={handleSubmit}>
-        <Input
-          className="mb-4"
-          label="Name"
-          placeholder="Team name"
-          value={name}
-          onChange={(e) => updateForm({ name: e.target.value })}
-        />
-        <Button variant="primary" type="submit">
-          Create
-        </Button>
-      </form>
-      <div className="w-10/12"></div>
-    </div>
+    <>
+      <h3 className="mb-24 text-4xl uppercase">Create new Team</h3>
+      <div className="grid grid-cols-2 gap-16 max-w-4xl">
+        <form onSubmit={handleSubmit}>
+          <Input
+            className="mb-4"
+            label="Name"
+            placeholder="Team name"
+            value={name}
+            onChange={(e) => updateForm({ name: e.target.value })}
+          />
+          <Button variant="primary" type="submit">
+            Create
+          </Button>
+        </form>
+        <div className="w-10/12"></div>
+      </div>
+    </>
   );
 };

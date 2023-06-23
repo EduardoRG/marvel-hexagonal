@@ -1,7 +1,7 @@
-import { HeroRepository } from "../../domain/HeroRepository";
+import { HeroesRepository } from "../../domain/HeroesRepository";
 
 export const removeHero = async (
-  heroRepository: HeroRepository,
+  heroRepository: HeroesRepository,
   heroId: string
 ): Promise<void> => {
   await heroRepository.remove(heroId);

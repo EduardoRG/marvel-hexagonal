@@ -1,8 +1,8 @@
 import { Team, ensureTeamIsValid } from "../../domain/Team";
-import { TeamRepository } from "../../domain/TeamRepository";
+import { TeamsRepository } from "../../domain/TeamsRepository";
 
 export const createTeam = async (
-  teamRepository: TeamRepository,
+  teamRepository: TeamsRepository,
   team: Team
 ) => {
   ensureTeamIsValid(team);

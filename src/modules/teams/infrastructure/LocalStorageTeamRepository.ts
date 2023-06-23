@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
-import { TeamRepository } from "../domain/TeamRepository";
+import { TeamsRepository } from "../domain/TeamsRepository";
 import { Team } from "../domain/Team";
 
-export const createLocalStorageTeamRepository = (): TeamRepository => {
+export const createLocalStorageTeamRepository = (): TeamsRepository => {
   return {
     get: async (teamId) => {
       const teams = JSON.parse(localStorage.getItem("teams") || "{}");

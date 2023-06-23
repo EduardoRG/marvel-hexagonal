@@ -38,6 +38,7 @@ export const RoleSelector = ({
           onClick={() => onChange(roleButton.id)}
           variant={value === roleButton.id ? "primary" : "default"}
           type="button"
+          aria-label={roleButton.id}
         >
           {roleButton.icon}
         </Button>

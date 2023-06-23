@@ -1,8 +1,8 @@
 import { Team } from "../../domain/Team";
-import { TeamRepository } from "../../domain/TeamRepository";
+import { TeamsRepository } from "../../domain/TeamsRepository";
 
 export const updateTeam = async (
-  TeamRepository: TeamRepository,
+  TeamRepository: TeamsRepository,
   teamId: string,
   data: Partial<Team>
 ) => {

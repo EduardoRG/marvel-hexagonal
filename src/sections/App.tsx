@@ -1,5 +1,5 @@
 import { createLocalStorageHeroRepository } from "../modules/heroes/infrastructure/LocalStorageHeroRepository";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./navbar/Navbar";
 import { HeroCreator } from "./heroes/HeroCreator";
 import { TeamCreator } from "./teams/TeamCreator";
 import { Button, Divider } from "./shared";
@@ -30,17 +30,14 @@ export const App = () => {
         </section>
         <Divider />
         <section className="flex flex-col justify-center items-center py-32 px-32">
-          <h3 className="mb-24 text-4xl uppercase">All your Heroes</h3>
           <HeroesList />
         </section>
         <Divider />
         <section className="flex flex-col justify-center items-center py-32 px-32">
-          <h3 className="mb-24 text-4xl uppercase">Create new Hero</h3>
           <HeroCreator />
         </section>
         <Divider />
         <section className="flex flex-col justify-center items-center py-32 px-32">
-          <h3 className="mb-24 text-4xl uppercase">Create new Team</h3>
           <TeamCreator />
         </section>
       </TeamsContextProvider>

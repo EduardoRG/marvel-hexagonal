@@ -1,8 +1,8 @@
 import { Hero } from "../../domain/Hero";
-import { HeroRepository } from "../../domain/HeroRepository";
+import { HeroesRepository } from "../../domain/HeroesRepository";
 
 export const getHero = async (
-  heroRepository: HeroRepository,
+  heroRepository: HeroesRepository,
   heroId: string
 ): Promise<Hero | null> => {
   return heroRepository.get(heroId);

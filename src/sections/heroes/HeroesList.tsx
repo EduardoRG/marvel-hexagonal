@@ -1,4 +1,4 @@
-import { Hero, HeroRoleType } from "../../modules/heroes/domain/Hero";
+import { Hero, HeroRoleType } from "@/modules/heroes/domain/Hero";
 import { RoleIcon } from "../shared";
 import { useHeroesContext } from "./HeroesContext";
 import { MiniHeroCard } from "./MiniHeroCard";
@@ -17,23 +17,26 @@ export const HeroesList = () => {
   };
 
   return (
-    <div className="grid grid-cols-3 gap-16 max-w-4xl">
-      {Object.entries(heroesByRole).map(([role, heroes]) => (
-        <div key={role} className="">
-          <div className="rounded-full bg-slate-700 w-16 h-16 flex justify-center items-center mb-8">
-            <RoleIcon role={role as HeroRoleType} />
+    <>
+      <h3 className="mb-24 text-4xl uppercase">All your Heroes</h3>
+      <div className="grid grid-cols-3 gap-16 max-w-4xl">
+        {Object.entries(heroesByRole).map(([role, heroes]) => (
+          <div key={role}>
+            <div className="rounded-full bg-slate-700 w-16 h-16 flex justify-center items-center mb-8">
+              <RoleIcon role={role as HeroRoleType} />
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+              {heroes.map((hero) => (
+                <MiniHeroCard
+                  key={hero.id}
+                  thumbnail={hero.thumbnail}
+                  name={hero.name}
+                />
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-3 gap-2">
-            {heroes.map((hero) => (
-              <MiniHeroCard
-                key={hero.id}
-                thumbnail={hero.thumbnail}
-                name={hero.name}
-              />
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };

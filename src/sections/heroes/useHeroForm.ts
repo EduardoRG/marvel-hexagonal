@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHeroesContext } from "./HeroesContext";
-import { HeroWithoutId } from "../../modules/heroes/domain/Hero";
+import { HeroWithoutId } from "@/modules/heroes/domain/Hero";
 
 enum FormStatus {
   Success,

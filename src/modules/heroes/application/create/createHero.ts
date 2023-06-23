@@ -1,8 +1,8 @@
 import { Hero, ensureHeroIsValid } from "../../domain/Hero";
-import { HeroRepository } from "../../domain/HeroRepository";
+import { HeroesRepository } from "../../domain/HeroesRepository";
 
 export const createHero = async (
-  heroRepository: HeroRepository,
+  heroRepository: HeroesRepository,
   hero: Hero
 ): Promise<void> => {
   ensureHeroIsValid(hero);

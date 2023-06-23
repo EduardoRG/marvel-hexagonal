@@ -1,8 +1,8 @@
 import { Hero } from "../../domain/Hero";
-import { HeroRepository } from "../../domain/HeroRepository";
+import { HeroesRepository } from "../../domain/HeroesRepository";
 
 export const updateHero = async (
-  heroRepository: HeroRepository,
+  heroRepository: HeroesRepository,
   heroId: string,
   data: Partial<Hero>
 ): Promise<void> => {

@@ -1,8 +1,8 @@
 import { Team } from "../../domain/Team";
-import { TeamRepository } from "../../domain/TeamRepository";
+import { TeamsRepository } from "../../domain/TeamsRepository";
 
 export const getAllTeams = async (
-  teamRepository: TeamRepository
+  teamRepository: TeamsRepository
 ): Promise<Team[]> => {
   return teamRepository.getAll();
 };

@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
 import { Hero } from "../domain/Hero";
-import { HeroRepository } from "../domain/HeroRepository";
+import { HeroesRepository } from "../domain/HeroesRepository";
 
-export const createLocalStorageHeroRepository = (): HeroRepository => {
+export const createLocalStorageHeroRepository = (): HeroesRepository => {
   return {
     get: async (heroId) => {
       const heroes = JSON.parse(localStorage.getItem("heroes") || "{}");

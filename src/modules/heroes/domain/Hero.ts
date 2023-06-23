@@ -6,7 +6,7 @@ export interface Hero {
   description: string;
   role: HeroRoleType;
   thumbnail: string;
-  teamId: number | "default";
+  teamId: string | "default";
 }
 
 export type HeroWithoutId = Omit<Hero, "id">;

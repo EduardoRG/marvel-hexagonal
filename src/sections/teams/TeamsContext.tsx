@@ -4,7 +4,7 @@ import { getAllTeams } from "../../modules/teams/application/getAll/getAllTeams"
 import { createTeam } from "../../modules/teams/application/create/createTeam";
 import { removeTeam } from "../../modules/teams/application/remove/removeTeam";
 import { Team, TeamWithoutId } from "../../modules/teams/domain/Team";
-import { TeamRepository } from "../../modules/teams/domain/TeamRepository";
+import { TeamsRepository } from "../../modules/teams/domain/TeamsRepository";
 import { updateTeam } from "../../modules/teams/application/update/updateTeam";
 
 export interface ContextState {
@@ -21,7 +21,7 @@ export const TeamsContext = React.createContext<ContextState>(
 export const TeamsContextProvider = ({
   children,
   repository,
-}: React.PropsWithChildren<{ repository: TeamRepository }>) => {
+}: React.PropsWithChildren<{ repository: TeamsRepository }>) => {
   const [teams, setTeams] = useState<Team[]>([]);
 
   const getTeams = useCallback(async () => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HeroWithoutId } from "../../modules/heroes/domain/Hero";
+import { HeroWithoutId } from "@/modules/heroes/domain/Hero";
 
 const initialFormData: HeroWithoutId = {
   role: "Tank",

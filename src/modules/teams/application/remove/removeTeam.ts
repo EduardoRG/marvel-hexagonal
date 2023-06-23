@@ -1,7 +1,7 @@
-import { TeamRepository } from "../../domain/TeamRepository";
+import { TeamsRepository } from "../../domain/TeamsRepository";
 
 export const removeTeam = async (
-  teamRepository: TeamRepository,
+  teamRepository: TeamsRepository,
   teamId: string
 ) => {
   await teamRepository.remove(teamId);
