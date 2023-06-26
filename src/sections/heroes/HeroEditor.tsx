@@ -1,19 +1,25 @@
+import { Hero } from "@/modules/heroes/domain/Hero";
 import { Button, HeroCard, Input, RoleSelector, Textarea } from "../shared";
-import { useHeroCreatorForm } from "./useHeroCreatorForm";
+import { useHeroEditorForm } from "./useHeroEditorForm";
 import { useHeroFormData } from "./useHeroFormData";
 
-interface HeroCreatorProps {
+interface HeroEditorProps {
+  hero: Hero;
   onSubmit?: () => void;
+  onDelete?: () => void;
 }
 
-export const HeroCreator = ({ onSubmit }: HeroCreatorProps) => {
+export const HeroEditor = ({ hero, onSubmit, onDelete }: HeroEditorProps) => {
+  const { id: heroId, ...initialFormData } = hero;
   const {
     formData: { role, name, description, thumbnail, teamId },
     updateForm,
     resetForm,
-  } = useHeroFormData();
+  } = useHeroFormData(initialFormData);
 
-  const { submitForm, resetFormStatus } = useHeroCreatorForm();
+  const { submitForm, deleteHero, resetFormStatus } = useHeroEditorForm({
+    heroId,
+  });
 
   const handleSubmit = async (
     event: React.FormEvent<HTMLFormElement>
@@ -25,6 +31,17 @@ export const HeroCreator = ({ onSubmit }: HeroCreatorProps) => {
       resetForm();
       resetFormStatus();
       onSubmit && onSubmit();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleDelete = async () => {
+    try {
+      await deleteHero();
+      resetForm();
+      resetFormStatus();
+      onDelete && onDelete();
     } catch (error) {
       console.error(error);
     }
@@ -63,8 +80,11 @@ export const HeroCreator = ({ onSubmit }: HeroCreatorProps) => {
           onChange={(e) => updateForm({ thumbnail: e.target.value })}
           required
         />
-        <Button variant="primary" type="submit">
-          Create
+        <Button className="mr-2" variant="primary" type="submit">
+          Update
+        </Button>
+        <Button type="button" onClick={handleDelete}>
+          Delete
         </Button>
       </form>
       <div className="w-10/12">

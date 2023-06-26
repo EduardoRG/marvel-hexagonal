@@ -1,0 +1,300 @@
+{
+  "heroes": [
+    {
+      "id": "694f66de-3c74-484b-a541-396c33916852",
+      "teamId": "default",
+      "name": "D.Va",
+      "description": "D.Va era una jugadora profesional que ahora aprovecha sus habilidades para pilotar un meca de última generación al servicio de su país.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/ca114f72193e4d58a85c087e9409242f1a31e808cf4058678b8cbf767c2a9a0a.png"
+    },
+    {
+      "id": "546aeb88-a1a9-4c91-8651-e0801ad235de",
+      "teamId": "default",
+      "name": "Doomfist",
+      "description": "Doomfist es el calculador líder de Talon, una organización terrorista y fuerza paramilitar que opera en contraposición a Overwatch.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png"
+    },
+    {
+      "id": "7520e5cc-6517-4556-827f-867f6ac9e1d4",
+      "teamId": "default",
+      "name": "Junker Queen",
+      "description": "Provista de su hacha Matanza y un guante electromagnético, la feroz líder de los Chatarreros emprende una misión para dominar el mundo.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cef2406b2244b80506f83b8fb9ebaf214f41fa8795cbeef84026cd8018561d04.png"
+    },
+    {
+      "id": "23c2a5c9-f402-4185-bdda-e73f268587ae",
+      "teamId": "default",
+      "name": "Orisa",
+      "description": "Orisa, construida a partir de los restos de uno de los robots OR-15 que durante un breve tiempo ejercieron como defensores de Numbani, es la más reciente protectora de la ciudad, aunque todavía tiene mucho que aprender.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71e96294617e81051d120b5d04b491bb1ea40e2933da44d6631aae149aac411d.png"
+    },
+    {
+      "id": "ff757831-ed6f-4185-95a4-ff13b9d214b3",
+      "teamId": "default",
+      "name": "Ramattra",
+      "description": "Nada impedirá que el brutal líder de Null Sector haga realidad su visión del mundo.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3e0367155e1940a24da076c6f1f065aacede88dbc323631491aa0cd5a51e0b66.png"
+    },
+    {
+      "id": "1c2608e2-4947-4770-8733-194c881b8d10",
+      "teamId": "default",
+      "name": "Reinhardt",
+      "description": "Reinhardt Wilhelm es un campeón de una era pasada que vive según los antiguos ideales de la caballería: honor, justicia y valor.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/490d2f79f8547d6e364306af60c8184fb8024b8e55809e4cc501126109981a65.png"
+    },
+    {
+      "id": "734b0859-112c-4ce2-b97a-249a2ef1d3c7",
+      "teamId": "default",
+      "name": "Roadhog",
+      "description": "Roadhog es un sicario implacable que se ha labrado una reputación de criminal arbitrario aficionado a la destrucción.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/72e02e747b66b61fcbc02d35d350770b3ec7cbaabd0a7ca17c0d82743d43a7e8.png"
+    },
+    {
+      "id": "e27d203f-9a63-4968-90a5-cb6da8494959",
+      "teamId": "default",
+      "name": "Sigma",
+      "description": "La vida del brillante astrofísico Siebren de Kuiper cambió para siempre cuando un experimento fallido le otorgó la capacidad de controlar la gravedad. Ahora Talon lo manipula para sus propios fines.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/cd7a4c0a0df8924afb2c9f6df864ed040f20250440c36ca2eb634acf6609c5e4.png"
+    },
+    {
+      "id": "f1329a1c-d7c8-4243-a497-6a114dcb273c",
+      "teamId": "default",
+      "name": "Winston",
+      "description": "Winston, un gorila superinteligente modificado genéticamente, también es un científico brillante y un defensor del potencial de la humanidad.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bd9c8e634d89488459dfc1aeb21b602fa5c39aa05601a4167682f3a3fed4e0ee.png"
+    },
+    {
+      "id": "646c1a20-aa61-445a-887c-1c9157ba9119",
+      "teamId": "default",
+      "name": "Wrecking Ball",
+      "description": "Wrecking Ball, mecánico inteligentísimo y habilidoso, además de luchador, surgió de los laboratorios de Colonia Lunar Horizon para convertirse en el campeón de Junker Queen.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/5c18e39ce567ee8a84078f775b9f76a2ba891de601c059a3d2b46b61ae4afb42.png"
+    },
+    {
+      "id": "8190acdb-906d-4abe-a9fa-b56741477cef",
+      "teamId": "default",
+      "name": "Zarya",
+      "description": "Aleksandra Zaryanova es una de las mujeres más fuertes del mundo: una atleta que sacrificó la gloria personal para proteger a su familia, sus amigos y su país en tiempos de guerra.",
+      "role": "Tank",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8819ba85823136640d8eba2af6fd7b19d46b9ee8ab192a4e06f396d1e5231f7a.png"
+    },
+    {
+      "id": "4466cbcc-071e-4dc9-ba43-188b0a11011c",
+      "teamId": "default",
+      "name": "Ashe",
+      "description": "Ashe es la ambiciosa y calculadora líder de la banda Deadlock Rebels y una figura respetada en el mundo criminal de los bajos fondos.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/8dc2a024c9b7d95c7141b2ef065590dbc8d9018d12ad15f76b01923986702228.png"
+    },
+    {
+      "id": "19760cba-b8e2-474b-b1db-920d31205a65",
+      "teamId": "default",
+      "name": "Bastion",
+      "description": "Antaño un combatiente de primera línea durante la devastadora Crisis Ómnica, ahora esta curiosa unidad Bastion se dedica a explorar el mundo. Le fascina la naturaleza, pero mantiene las distancias con una humanidad que aún recela de los robots.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4d715f722c42215072b5dd0240904aaed7b5285df0b2b082d0a7f1865b5ea992.png"
+    },
+    {
+      "id": "688ba6b0-d267-4e00-a0de-0c06a1035e99",
+      "teamId": "default",
+      "name": "Cassidy",
+      "description": "Armado con su revólver Pacificador, el forajido Cole Cassidy imparte justicia a su manera.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/6cfb48b5597b657c2eafb1277dc5eef4a07eae90c265fcd37ed798189619f0a5.png"
+    },
+    {
+      "id": "afba26da-2f76-4543-bf0a-f2bc0ca14dd6",
+      "teamId": "default",
+      "name": "Echo",
+      "description": "Echo es una robot polivalente y adaptable con la inteligencia artificial más sofisticada del mundo. El diseño fue obra de la doctora Mina Liao para las misiones de combate de Overwatch.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f086bf235cc6b7f138609594218a8385c8e5f6405a39eceb0deb9afb429619fe.png"
+    },
+    {
+      "id": "051f5a39-fb03-4ff5-be94-a97b0f108897",
+      "teamId": "default",
+      "name": "Genji",
+      "description": "El cíborg ninja Genji Shimada ha aceptado el cuerpo potenciado que rechazó en el pasado y, gracias a ello, ha descubierto una humanidad superior.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/4edf5ea6d58c449a2aeb619a3fda9fff36a069dfbe4da8bc5d8ec1c758ddb8dc.png"
+    },
+    {
+      "id": "cba2abbd-f1be-421d-a6b2-0728d0635712",
+      "teamId": "default",
+      "name": "Hanzo",
+      "description": "Hanzo Shimada no deja de poner a prueba sus habilidades como arquero y asesino para convertirse en un guerrero sin par.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/aecd8fa677f0093344fab7ccb7c37516c764df3f5ff339a5a845a030a27ba7e0.png"
+    },
+    {
+      "id": "f13784e6-56b8-4e0f-bbd9-9d297fce467b",
+      "teamId": "default",
+      "name": "Junkrat",
+      "description": "Junkrat es un demoledor fanático de los explosivos que disfruta con el caos y la destrucción.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/037e3df083624e5480f8996821287479a375f62b470572a22773da0eaf9441d0.png"
+    },
+    {
+      "id": "dd92f100-54b7-4e43-8b94-8d396371f9f7",
+      "teamId": "default",
+      "name": "Mei",
+      "description": "Mei es una científica que ha decidido convertir la protección de la naturaleza en su lucha personal.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1533fcb0ee1d3f9586f84b4067c6f63eca3322c1c661f69bfb41cd9e4f4bcc11.png"
+    },
+    {
+      "id": "ab50a763-0474-4375-8617-fff978c9db13",
+      "teamId": "default",
+      "name": "Pharah",
+      "description": "Fareeha Amari lleva la llamada del deber en la sangre. Procede de un largo linaje de soldados condecorados y su mayor afán es servir con honor.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f8261595eca3e43e3b37cadb8161902cc416e38b7e0caa855f4555001156d814.png"
+    },
+    {
+      "id": "e83a33b0-1d2b-43aa-be42-9573b1f064b9",
+      "teamId": "default",
+      "name": "Reaper",
+      "description": "Corren rumores de la existencia de un terrorista vestido de negro conocido como «Reaper». Su verdadera identidad y sus objetivos son un misterio. Solo hay una cosa segura: donde él va, la muerte lo sigue.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2edb9af69d987bb503cd31f7013ae693640e692b321a73d175957b9e64394f40.png"
+    },
+    {
+      "id": "b95167fa-126a-472d-a9ab-53e8848a6fc2",
+      "teamId": "default",
+      "name": "Sojourn",
+      "description": "Como líder de la antigua Overwatch, Vivian Chase «Sojourn» tiene claro que no permitirá que los héroes nuevos repitan los errores del pasado.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a53bf7ad9d2f33aaf9199a00989f86d4ba1f67c281ba550312c7d96e70fec4ea.png"
+    },
+    {
+      "id": "542a6dff-05e4-40ff-84e3-d27469b89b7e",
+      "teamId": "default",
+      "name": "Soldado: 76",
+      "description": "El justiciero conocido como Soldado: 76, en busca y captura por todo el mundo, libra una guerra personal para revelar la verdad que hay detrás de la caída de Overwatch.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/20b4ef00ed05d6dba75df228241ed528df7b6c9556f04c8070bad1e2f89e0ff5.png"
+    },
+    {
+      "id": "acd41c08-383f-46d7-8304-062ec208d87b",
+      "teamId": "default",
+      "name": "Sombra",
+      "description": "Sombra, una de las hackers más notorias del mundo, usa la información para manipular a los poderosos.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/bca8532688f01b071806063b9472f1c0f9fc9c7948e6b59e210006e69cec9022.png"
+    },
+    {
+      "id": "6dcb6e75-6d25-46b3-8216-8040fc744916",
+      "teamId": "default",
+      "name": "Symmetra",
+      "description": "Symmetra modela la realidad, literalmente. Mediante sus creaciones de luz sólida, es capaz de manipular el mundo de acuerdo con su visión de una sociedad perfecta.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/7f2024c5387c9d76d944a5db021c2774d1e9d7cbf39e9b6a35b364d38ea250ac.png"
+    },
+    {
+      "id": "39714f3d-1df2-4ed7-882c-e9d417cd6b9c",
+      "teamId": "default",
+      "name": "Torbjörn",
+      "description": "En su apogeo, Overwatch poseyó uno de los arsenales más avanzados del planeta, y casi todo provenía del taller de un avezado ingeniero llamado Torbjörn Lindholm.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/1309ab1add1cc19189a2c8bc7b1471f88efa1073e9705d2397fdb37d45707d01.png"
+    },
+    {
+      "id": "18751381-fe03-4b9d-9666-7805cfe0a5ca",
+      "teamId": "default",
+      "name": "Tracer",
+      "description": "La exagente de Overwatch conocida como Tracer es una aventurera del espacio-tiempo y una fuerza irrefrenable del bien.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a66413200e934da19540afac965cfe8a2de4ada593d9a52d53108bb28e8bbc9c.png"
+    },
+    {
+      "id": "1b9d0f44-35d2-4d2c-a837-a7abab520cea",
+      "teamId": "default",
+      "name": "Widowmaker",
+      "description": "Widowmaker es la asesina perfecta: una depredadora paciente, eficiente e inmisericorde que no muestra ni emoción ni arrepentimiento.",
+      "role": "Damage",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/a714f1cb33cc91c6b5b3e89ffe7e325b99e7c89cc8e8feced594f81305147efe.png"
+    },
+    {
+      "id": "495ded2f-da9f-4991-90f9-6baec7b66e11",
+      "teamId": "default",
+      "name": "Ana",
+      "description": "Ana, una de las fundadoras de Overwatch, usa sus habilidades y experiencia para proteger su hogar y a todos los que le importan.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/3429c394716364bbef802180e9763d04812757c205e1b4568bc321772096ed86.png"
+    },
+    {
+      "id": "7116579e-8f8a-4ed0-b2ca-aa1c570fedcf",
+      "teamId": "default",
+      "name": "Baptiste",
+      "description": "Baptiste es un médico de combate y exagente de Talon que ahora usa sus habilidades para ayudar a las víctimas de la guerra.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/f979896f74ba22db2a92a85ae1260124ab0a26665957a624365e0f96e5ac5b5c.png"
+    },
+    {
+      "id": "2508c5b3-835c-4d42-b910-66cacf93033d",
+      "teamId": "default",
+      "name": "Brigitte",
+      "description": "Cansada de estar de brazos cruzados, Brigitte Lindholm se ha alzado en armas para proteger a aquellos que la necesitan.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/48392820c6976ee1cd8dde13e71df85bf15560083ee5c8658fe7c298095d619a.png"
+    },
+    {
+      "id": "646336b8-78c2-416b-add3-523fd1cb37df",
+      "teamId": "default",
+      "name": "Kiriko",
+      "description": "Como miko del santuario de Kanezaka e hija de la antigua maestra espadachina de los Shimada, Kiriko Kamori canaliza sus habilidades espirituales y de ninja para sanar su fracturada ciudad. ",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/088aff2153bdfa426984b1d5c912f6af0ab313f0865a81be0edd114e9a2f79f9.png"
+    },
+    {
+      "id": "23506b4c-ced4-4293-b475-db25d200ba6a",
+      "teamId": "default",
+      "name": "Lifeweaver",
+      "description": "El genio creador de la bioluz, una tecnología que combina materia vegetal con luz sólida. Sueña con sanar el mundo.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/39d4514f1b858bc228035b09d5a74ed41f8eeefc9a0d1873570b216ba04334df.png"
+    },
+    {
+      "id": "7a120f94-7941-437e-bd28-647d1e883805",
+      "teamId": "default",
+      "name": "Lúcio",
+      "description": "Lúcio es una celebridad conocida internacionalmente que inspira el cambio social a través de su música y el activismo.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/e2ff2527610a0fbe0c9956f80925123ef3e66c213003e29d37436de30b90e4e1.png"
+    },
+    {
+      "id": "1cc03222-f244-40ee-bb52-700f7849bcdf",
+      "teamId": "default",
+      "name": "Mercy",
+      "description": "Además de una sanadora sin par y un auténtico ángel de la guarda para sus pacientes, la doctora Angela Ziegler es una científica brillante y una defensora acérrima de la paz.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/2508ddd39a178d5f6ae993ab43eeb3e7961e5a54a9507e6ae347381193f28943.png"
+    },
+    {
+      "id": "2598fffe-e527-4910-a5a7-a98c8ecb04a8",
+      "teamId": "default",
+      "name": "Moira",
+      "description": "La científica Moira O'Deorain, brillante y controvertida a partes iguales, está a la última en ingeniería genética y busca una forma de sobrescribir los componentes fundamentales que dan forma a la vida.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/000beeb5606e01497897fa9210dd3b1e78e1159ebfd8afdc9e989047d7d3d08f.png"
+    },
+    {
+      "id": "c79f8c60-d7ce-44c1-a694-21d8e4d4770a",
+      "teamId": "default",
+      "name": "Zenyatta",
+      "description": "Zenyatta es un monje ómnico que recorre el mundo en busca de iluminación espiritual. Se dice que todo aquel que se lo encuentra por el camino nunca vuelve a ser el mismo.",
+      "role": "Support",
+      "thumbnail": "https://d15f34w2p8l1cc.cloudfront.net/overwatch/71cabc939c577581f66b952f9c70891db779251e8e70f29de3c7bf494edacfe4.png"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { Hero, HeroRoleType } from "@/modules/heroes/domain/Hero";
 import { RoleIcon } from "../shared";
 import { useHeroesContext } from "./HeroesContext";
-import { MiniHeroCard } from "./MiniHeroCard";
+import { MiniHeroEditorCard } from "./MiniHeroEditorCard";
 
 export const HeroesList = () => {
   const { heroes } = useHeroesContext();
@@ -27,11 +27,7 @@ export const HeroesList = () => {
             </div>
             <div className="grid grid-cols-3 gap-2">
               {heroes.map((hero) => (
-                <MiniHeroCard
-                  key={hero.id}
-                  thumbnail={hero.thumbnail}
-                  name={hero.name}
-                />
+                <MiniHeroEditorCard key={hero.id} hero={hero} />
               ))}
             </div>
           </div>

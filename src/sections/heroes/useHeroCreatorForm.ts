@@ -9,7 +9,7 @@ enum FormStatus {
   Initial,
 }
 
-export const useHeroForm = (): {
+export const useHeroCreatorForm = (): {
   formStatus: FormStatus;
   submitForm: (formData: HeroWithoutId) => Promise<void>;
   resetFormStatus: () => void;

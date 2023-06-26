@@ -3,11 +3,9 @@ import { HeroWithoutId } from "@/modules/heroes/domain/Hero";
 
 const initialFormData: HeroWithoutId = {
   role: "Tank",
-  name: "Doomfist",
-  description:
-    "Doomfist es el calculador líder de Talon, una organización terrorista y fuerza paramilitar que opera en contraposición a Overwatch.",
-  thumbnail:
-    "https://d15f34w2p8l1cc.cloudfront.net/overwatch/13750471c693c1a360eb19d5ace229c8599a729cd961d72ebee0e157657b7d18.png",
+  name: "",
+  description: "",
+  thumbnail: "",
   teamId: "default",
 };
 
