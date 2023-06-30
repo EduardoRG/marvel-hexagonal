@@ -18,7 +18,9 @@ export const HeroesList = () => {
 
   return (
     <>
-      <h3 className="mb-24 text-4xl uppercase">All your Heroes</h3>
+      <h3 id="heroes" className="mb-24 text-4xl uppercase">
+        Heroes
+      </h3>
       <div className="grid grid-cols-3 gap-16 max-w-4xl">
         {Object.entries(heroesByRole).map(([role, heroes]) => (
           <div key={role}>

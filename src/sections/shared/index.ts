@@ -4,6 +4,7 @@ export { Divider } from "./Divider";
 export { HeroCard } from "./HeroCard";
 export { Input } from "./Input";
 export { MiniHeroCard } from "./MiniHeroCard";
+export { Popover, PopoverTrigger, PopoverContent } from "./Popover";
 export { RoleIcon } from "./RoleIcon";
 export { RoleSelector } from "./RoleSelector";
 export { Textarea } from "./Textarea";

@@ -9,19 +9,37 @@ enum FormStatus {
   Initial,
 }
 
-export const useTeamForm = (): {
+interface UseTeamEditorFormProps {
+  teamId: string;
+}
+
+export const useTeamEditorForm = ({
+  teamId,
+}: UseTeamEditorFormProps): {
   formStatus: FormStatus;
   submitForm: (formData: TeamWithoutId) => Promise<void>;
+  deleteTeam: () => Promise<void>;
   resetFormStatus: () => void;
 } => {
   const [formStatus, setFormStatus] = useState(FormStatus.Initial);
-  const { createTeam } = useTeamsContext();
+  const { updateTeam, removeTeam } = useTeamsContext();
 
-  const submitForm = async ({ name }: TeamWithoutId) => {
+  const submitForm = async ({ name, members }: TeamWithoutId) => {
     setFormStatus(FormStatus.Loading);
 
     try {
-      await createTeam({ name });
+      await updateTeam(teamId, { name, members });
+      setFormStatus(FormStatus.Success);
+    } catch (e) {
+      setFormStatus(FormStatus.Error);
+    }
+  };
+
+  const deleteTeam = async () => {
+    setFormStatus(FormStatus.Loading);
+
+    try {
+      await removeTeam(teamId);
       setFormStatus(FormStatus.Success);
     } catch (e) {
       setFormStatus(FormStatus.Error);
@@ -35,6 +53,7 @@ export const useTeamForm = (): {
   return {
     formStatus,
     submitForm,
+    deleteTeam,
     resetFormStatus,
   };
 };

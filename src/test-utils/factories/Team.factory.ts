@@ -6,6 +6,7 @@ export class TeamFactory {
     return {
       id: faker.string.uuid(),
       name: faker.company.name(),
+      members: [],
       ...data,
     };
   }

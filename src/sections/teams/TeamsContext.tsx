@@ -29,18 +29,19 @@ export const TeamsContextProvider = ({
     setTeams(teams);
   }, [repository]);
 
-  const create: ContextState["createTeam"] = async ({ name }) => {
+  const create: ContextState["createTeam"] = async ({ name, members }) => {
     const id = uuidv4();
 
     await createTeam(repository, {
       id,
       name,
+      members,
     });
     await getTeams();
   };
 
-  const remove: ContextState["removeTeam"] = async (heroId: string) => {
-    await removeTeam(repository, heroId);
+  const remove: ContextState["removeTeam"] = async (teamId: string) => {
+    await removeTeam(repository, teamId);
     await getTeams();
   };
 

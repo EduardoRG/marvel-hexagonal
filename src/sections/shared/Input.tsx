@@ -2,7 +2,7 @@ import classNames from "classnames";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
-  label: string;
+  label?: string;
 }
 
 export const Input = ({ className, label, ...props }: InputProps) => {

@@ -2,7 +2,8 @@ import { useState } from "react";
 import { TeamWithoutId } from "../../modules/teams/domain/Team";
 
 const initialFormData: TeamWithoutId = {
-  name: "Team name",
+  name: "",
+  members: [null, null, null, null, null],
 };
 
 export const useTeamFormData = (

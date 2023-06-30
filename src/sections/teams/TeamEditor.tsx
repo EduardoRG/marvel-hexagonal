@@ -1,20 +1,26 @@
 import { Button, Input } from "../shared";
 import { useTeamFormData } from "./useTeamFormData";
-import { useTeamCreatorForm } from "./useTeamCreatorForm";
+import { useTeamEditorForm } from "./useTeamEditorForm";
 import { TeamMembersSelector } from "./TeamMembersSelector";
+import { Team } from "@/modules/teams/domain/Team";
 
-interface TeamCreatorProps {
+interface TeamEditorProps {
+  team: Team;
   onSubmit?: () => void;
+  onDelete?: () => void;
 }
 
-export const TeamCreator = ({ onSubmit }: TeamCreatorProps) => {
+export const TeamEditor = ({ team, onSubmit, onDelete }: TeamEditorProps) => {
+  const { id: teamId, ...initialFormData } = team;
   const {
     formData: { name, members },
     updateForm,
     resetForm,
-  } = useTeamFormData();
+  } = useTeamFormData(initialFormData);
 
-  const { submitForm, resetFormStatus } = useTeamCreatorForm();
+  const { submitForm, deleteTeam, resetFormStatus } = useTeamEditorForm({
+    teamId,
+  });
 
   const handleSubmit = async (
     event: React.FormEvent<HTMLFormElement>
@@ -26,6 +32,17 @@ export const TeamCreator = ({ onSubmit }: TeamCreatorProps) => {
       resetForm();
       resetFormStatus();
       onSubmit && onSubmit();
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleDelete = async () => {
+    try {
+      await deleteTeam();
+      resetForm();
+      resetFormStatus();
+      onDelete && onDelete();
     } catch (error) {
       console.error(error);
     }
@@ -45,8 +62,11 @@ export const TeamCreator = ({ onSubmit }: TeamCreatorProps) => {
         members={members}
         onChange={(members) => updateForm({ members })}
       />
-      <Button variant="primary" type="submit">
-        Create
+      <Button className="mr-2" variant="primary" type="submit">
+        Update
+      </Button>
+      <Button type="button" onClick={handleDelete}>
+        Delete
       </Button>
     </form>
   );
